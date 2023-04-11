@@ -38,7 +38,7 @@ public class FrontControllerServletV3 extends HttpServlet {
             resp.setStatus(HttpServletResponse.SC_NOT_FOUND);
             return;
         }
-         Map<String, String> paramMap = createParamMap(req);
+        Map<String, String> paramMap = createParamMap(req);
 
         ModelView modelView = controller.process(paramMap);
         String viewName = modelView.getViewName();

@@ -4,6 +4,7 @@ import org.springframework.stereotype.Repository;
 
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 @Repository
@@ -21,7 +22,7 @@ public class ItemRepository {
         return store.get(itemID);
     }
 
-    public ArrayList<Item> findByAll() {
+    public List<Item> findByAll() {
         return new ArrayList<>(store.values());
     }
 

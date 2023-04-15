@@ -25,4 +25,16 @@ public class MappingController {
         log.info("mapping variable= {}", userID);
         return "OK";
     }
+
+    @GetMapping(value = "/mapping-consume", consumes = "application/json")
+    public String mappingConsumes() {
+        log.info("mapping consumes");
+        return "OK";
+    }
+
+    @GetMapping(value = "/mapping-produce", produces = "application/json")
+    public String mappingProduce() {
+        log.info("mapping produce");
+        return "OK";
+    }
 }

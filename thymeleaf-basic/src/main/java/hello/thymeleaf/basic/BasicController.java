@@ -18,7 +18,13 @@ import java.util.Map;
 public class BasicController {
     @GetMapping("/text-basic")
     public String textBasic(Model model) {
-        model.addAttribute("data", " <b>Hello Spring!</b>");
+        model.addAttribute("data", "Hello Spring!");
+        return "basic/text-basic";
+    }
+
+    @GetMapping("/text-unescaped")
+    public String textUnescaped(Model model) {
+        model.addAttribute("data", "<b>Hello Spring!</b>");
         return "basic/text-unescaped";
     }
 
@@ -89,5 +95,17 @@ public class BasicController {
         list.add(new User("userB", 20));
         list.add(new User("userC", 30));
         model.addAttribute("users", list);
+    }
+
+    @GetMapping("/condition")
+    public String condition(Model model) {
+        addUsers(model);
+        return "basic/condition";
+    }
+
+    @GetMapping("/block")
+    public String block(Model model) {
+        addUsers(model);
+        return "basic/block";
     }
 }

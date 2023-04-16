@@ -6,6 +6,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.util.StreamUtils;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.ResponseBody;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -22,7 +23,7 @@ public class RequestBodyStringController {
 
         responseWriter.write("OK");
     }
-
+    @ResponseBody
     @PostMapping("/request-body-string-v4")
     public String requestBodyStringV3(@RequestBody String messageBody) throws IOException {
         log.info("message = {}", messageBody);

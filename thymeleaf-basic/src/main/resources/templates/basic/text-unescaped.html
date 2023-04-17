@@ -14,6 +14,9 @@
 <ul>
   <li><span th:inline="none">[[...]] = </span>[[${data}]]</li>
   <li><span th:inline="none">[(...)] = </span>[(${data})]</li>
+
+  <li><span th:utext="${data}"></span></li>
+  <li><span>[(${data})]</span></li>
 </ul>
 </body>
 </html>

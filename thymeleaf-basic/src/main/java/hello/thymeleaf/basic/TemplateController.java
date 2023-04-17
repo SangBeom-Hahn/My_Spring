@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class TemplateController {
     @GetMapping("/fragment")
     public String template() {
-        return "template/fragment/fragmentMain";
+        return "template/fragment/main";
     }
 
     @GetMapping("/layout")

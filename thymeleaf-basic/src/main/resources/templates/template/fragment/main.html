@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <div th:insert="~{/template/fragment/foot :: copy}"></div>
+
+
+
+    <div th:replace="~{/template/fragment/foot :: copyParam ('데이터1', '데이터2')}"></div>
+</body>
+</html>

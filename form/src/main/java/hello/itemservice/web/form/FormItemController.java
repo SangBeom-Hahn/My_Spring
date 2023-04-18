@@ -48,6 +48,12 @@ public class FormItemController {
         return deliveryCodes;
     }
 
+//    @ModelAttribute("item")
+//    public Item item() {
+//        return new Item();
+//    }
+
+
     @GetMapping
     public String items(Model model) {
         List<Item> items = itemRepository.findAll();

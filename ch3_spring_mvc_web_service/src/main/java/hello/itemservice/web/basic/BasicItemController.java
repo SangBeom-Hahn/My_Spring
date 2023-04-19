@@ -33,7 +33,9 @@ public class BasicItemController {
     }
 
     @GetMapping("/add")
-    public String addFrom() {
+    public String addFrom(Model model) {
+        // addForm에 item을 넣기 위한 빈 item 추가
+        model.addAttribute("item", new Item());
         return "basic/addForm";
     }
 

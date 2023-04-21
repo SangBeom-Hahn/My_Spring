@@ -3,6 +3,7 @@ package hello.itemservice.web.validation;
 import hello.itemservice.domain.item.Item;
 import hello.itemservice.domain.item.ItemRepository;
 import lombok.RequiredArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.util.StreamUtils;
@@ -16,6 +17,7 @@ import java.util.Map;
 
 @Controller
 @RequestMapping("/validation/v1/items")
+@Slf4j
 @RequiredArgsConstructor
 public class ValidationItemControllerV1 {
 
@@ -42,8 +44,11 @@ public class ValidationItemControllerV1 {
     }
 
     @PostMapping("/add")
-    public String addItem(@ModelAttribute Item item, RedirectAttributes redirectAttributes) {
+    public String addItem(@ModelAttribute Item item, RedirectAttributes redirectAttributes, Model model) {
         Map<String, String> errors = new HashMap<>();
+        Item item1 = new Item("A", 1, 2);
+        model.addAttribute("item1", item1);
+
 
         // 필드 검증
         // 상품명
@@ -63,9 +68,15 @@ public class ValidationItemControllerV1 {
 
         // 특정 필드의 범위를 넘어서는 검증
         if(item.getQuantity() * item.getPrice() < 10000) {
-            errors.put("global", "10000원은 넘어야 살 수 있습니다. 현재 값 : " + item.getQuantity() * item.getPrice());
+            errors.put("globalError", "10000원은 넘어야 살 수 있습니다. 현재 값 : " + item.getQuantity() * item.getPrice());
         }
 
+        // 실패하면 등록 form으로 이동
+        if(!errors.isEmpty()) {
+            log.info("{}", errors);
+            model.addAttribute("errors", errors);
+            return "validation/v1/addForm";
+        }
 
 
         Item savedItem = itemRepository.save(item);

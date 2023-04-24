@@ -101,7 +101,7 @@ public class HomeController {
          *         Member loingMember = (Member) session.getAttribute(SessionConst.LOGIN_MEMBER);
          */
 
-        // 너무 오래된 쿠키
+        // 로그인 안한 사용자
         if(loginMember == null) {
             return "home";
         }

@@ -9,10 +9,7 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Controller;
 import org.springframework.validation.BindingResult;
 import org.springframework.validation.annotation.Validated;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.ModelAttribute;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.*;
 
 import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletRequest;
@@ -83,8 +80,33 @@ public class LoginController {
 //        return "redirect:/";
 //    }
 
+//    @PostMapping("/login")
+//    public String login3(@Validated @ModelAttribute LoginForm form, BindingResult bindingResult, HttpServletRequest request) {
+//        // 필드 에러
+//        if(bindingResult.hasErrors()) {
+//            return "login/loginForm";
+//        }
+//
+//        // 핵심 비즈니스 에러
+//        Member loginMember = loginService.login(form.getLoginId(), form.getPassword());
+//        if(loginMember == null) {
+//            bindingResult.reject("loginFail", "아이디 또는 비번이 맞지 않음");
+//            return "login/loginForm";
+//        }
+//
+//        // 이전
+////        sessionManager.createSession(loginMember, request);
+//
+//        // 이후
+//        HttpSession session = request.getSession();
+//        session.setAttribute(SessionConst.LOGIN_MEMBER, loginMember);
+//        return "redirect:/";
+//    }
+
     @PostMapping("/login")
-    public String login3(@Validated @ModelAttribute LoginForm form, BindingResult bindingResult, HttpServletRequest request) {
+    public String login4(@Validated @ModelAttribute LoginForm form, BindingResult bindingResult,
+                         @RequestParam(defaultValue = "/") String redirectURL,
+                         HttpServletRequest request) {
         // 필드 에러
         if(bindingResult.hasErrors()) {
             return "login/loginForm";
@@ -97,13 +119,14 @@ public class LoginController {
             return "login/loginForm";
         }
 
-        // 이전
-//        sessionManager.createSession(loginMember, request);
-
-        // 이후
         HttpSession session = request.getSession();
         session.setAttribute(SessionConst.LOGIN_MEMBER, loginMember);
-        return "redirect:/";
+
+        // 이전
+//        return "redirect:/";
+
+        // 이후
+        return "redirect:" + redirectURL;
     }
 
 
@@ -135,7 +158,7 @@ public class LoginController {
     @PostMapping("/logout")
     public String logout3(HttpServletRequest request) {
         // 이전
-        sessionManager.expire(request);
+//        sessionManager.expire(request);
 
         // 이후
         HttpSession session = request.getSession(false);

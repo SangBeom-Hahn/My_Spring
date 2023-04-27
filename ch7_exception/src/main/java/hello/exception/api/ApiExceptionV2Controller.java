@@ -10,31 +10,11 @@ import org.apache.tomcat.jni.Error;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.servlet.ModelAndView;
 
 @Slf4j
 @RestController
 public class ApiExceptionV2Controller {
-    @ResponseStatus(HttpStatus.BAD_GATEWAY)
-    @ExceptionHandler(IllegalArgumentException.class)
-    public ErrorResult illegalExHandler(IllegalArgumentException e) {
-        log.error("[ex]", e);
-        return new ErrorResult("BAD", e.getMessage());
-    }
-
-    @ExceptionHandler(UserException.class)
-    public ResponseEntity<ErrorResult> userExHandler(UserException e) {
-        log.error("[exception]", e);
-        ErrorResult errorResult = new ErrorResult("user-ex", e.getMessage());
-        return new ResponseEntity<>(errorResult, HttpStatus.BAD_REQUEST);
-    }
-
-    @ResponseStatus(HttpStatus.INTERNAL_SERVER_ERROR)
-    @ExceptionHandler
-    public ErrorResult exHandler(Exception e) {
-        log.error("[exception]", e);
-        return new ErrorResult("EX", "내부 오류");
-    }
-
     @GetMapping("/api2/members/{id}")
     public MemberDTO memberDTO(@PathVariable("id") String id) {
         if(id.equals("ex")){

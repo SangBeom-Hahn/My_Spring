@@ -25,8 +25,8 @@ public class ServletUploadControllerV1 {
     public String upload(HttpServletRequest request) throws ServletException, IOException {
         log.info("request={}", request);
 
-        String username = request.getParameter("username");
-        log.info("username={}", username);
+        String username = request.getParameter("itemName");
+        log.info("itemName={}", username);
 
         Collection<Part> parts = request.getParts();
         log.info("parts={}", parts);

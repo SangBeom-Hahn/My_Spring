@@ -53,8 +53,7 @@ class MemberService3_1Test {
         memberRepository.save(memberB);
         //when
         log.info("START");
-        memberService.accountTransfer(memberA.getMemberId(),
-                memberB.getMemberId(), 2000);
+        memberService.accountTransfer(memberA.getMemberId(), memberB.getMemberId(), 2000);
         log.info("END");
         //then
         Member findMemberA = memberRepository.findById(memberA.getMemberId());

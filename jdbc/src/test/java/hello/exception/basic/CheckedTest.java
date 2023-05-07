@@ -1,6 +1,7 @@
 package hello.exception.basic;
 
 import lombok.extern.slf4j.Slf4j;
+import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 @Slf4j
@@ -15,7 +16,9 @@ public class CheckedTest {
     @Test
     void callThrow() throws MyCheckedException {
         Service service = new Service();
-        service.callThrow();
+        Assertions.assertThatThrownBy(() -> service.callThrow())
+                .isInstanceOf(MyCheckedException.class);
+
     }
 
     static class MyCheckedException extends Exception {

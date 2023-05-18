@@ -38,15 +38,24 @@ public class JpaRepository implements ItemRepository {
         findItem.setQuantity(updateParam.getQuantity());
     }
 
+//    @Override
+//    public Optional<Item> findById(Long id) {
+//        Item item = em.find(Item.class, id);
+//        return Optional.ofNullable(item);
+//    }
+
     @Override
     public Optional<Item> findById(Long id) {
-        Item item = em.find(Item.class, id);
-        return Optional.ofNullable(item);
+        String jpql = "select i from Item i where i.id = :id";
+        return Optional.ofNullable(em.createQuery(jpql, Item.class)
+                .setParameter("id", id)
+                .getSingleResult());
     }
 
     @Override
     public List<Item> findAll(ItemSearchCond cond) {
         String jpql = "select i from Item i";
+
         Integer maxPrice = cond.getMaxPrice();
         String itemName = cond.getItemName();
         if (StringUtils.hasText(itemName) || maxPrice != null) {

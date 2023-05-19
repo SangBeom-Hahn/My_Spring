@@ -2,6 +2,7 @@ package hello.itemservice;
 
 import hello.itemservice.domain.Item;
 import hello.itemservice.repository.ItemRepository;
+import hello.itemservice.repository.v2.ItemRepositoryV2;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.boot.context.event.ApplicationReadyEvent;
@@ -11,7 +12,8 @@ import org.springframework.context.event.EventListener;
 @RequiredArgsConstructor
 public class TestDataInit {
 
-    private final ItemRepository itemRepository;
+    private final ItemRepositoryV2 itemRepository;
+//    private final ItemRepository itemRepository;
 
     /**
      * 확인용 초기 데이터 추가

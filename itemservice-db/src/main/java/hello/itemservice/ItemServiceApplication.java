@@ -2,6 +2,7 @@ package hello.itemservice;
 
 import hello.itemservice.config.*;
 import hello.itemservice.repository.ItemRepository;
+import hello.itemservice.repository.v2.ItemRepositoryV2;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -13,7 +14,7 @@ import org.springframework.jdbc.datasource.DriverManagerDataSource;
 import javax.sql.DataSource;
 
 @Slf4j
-@Import(SpringDataJpaConfig.class)
+@Import(V2Config.class)
 @SpringBootApplication(scanBasePackages = "hello.itemservice.web")
 public class ItemServiceApplication {
 
@@ -23,7 +24,7 @@ public class ItemServiceApplication {
 
 	@Bean
 	@Profile("local")
-	public TestDataInit testDataInit(ItemRepository itemRepository) {
+	public TestDataInit testDataInit(ItemRepositoryV2 itemRepository) {
 		return new TestDataInit(itemRepository);
 	}
 

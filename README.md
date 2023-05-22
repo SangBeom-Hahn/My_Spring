@@ -6,6 +6,7 @@ To be Spring Master!!
    - [중간점검 1](https://hsb422.tistory.com/entry/%E3%85%81spring-PART%EC%A4%91%EA%B0%84%EC%A0%90%EA%B2%80-1)
    - [중간점검 2](https://hsb422.tistory.com/entry/spring-PART%EC%A4%91%EA%B0%84%EC%A0%90%EA%B2%80-2)
    - [중간점검 3](https://hsb422.tistory.com/entry/spring-PART%EC%A4%91%EA%B0%84%EC%A0%90%EA%B2%80-3)
+   - [중간점검 4](https://hsb422.tistory.com/entry/spring-PART%EC%A4%91%EA%B0%84%EC%A0%90%EA%B2%80-4)
 
 ## Contents
 
@@ -89,5 +90,14 @@ To be Spring Master!!
     - [자바 예외 이해](https://hsb422.tistory.com/entry/%E3%85%81spring-PART%EC%9E%90%EB%B0%94-%EC%98%88%EC%99%B8-%EC%9D%B4%ED%95%B4)
     - [스프링 데이터 접근 에외 처리](https://hsb422.tistory.com/entry/%E3%84%B4)
 
-11. spring SQL mapper ~ 
+11. spring data
+    - [데이터 접근 기술](https://hsb422.tistory.com/entry/%E3%85%87%E3%84%B4%E3%85%81)
+    - [스프링 JdbcTemplate 적용](https://hsb422.tistory.com/entry/spring-PART%EC%8A%A4%ED%94%84%EB%A7%81-JdbcTemplate-%EC%A0%81%EC%9A%A9)
+    - [데이터 접근 기술 테스트](https://hsb422.tistory.com/entry/%E3%84%B9%E3%85%87-1)
+    - [MyBatis](https://hsb422.tistory.com/entry/%E3%85%81spring-PARTMyBatis)
+    - [JPA](https://hsb422.tistory.com/entry/%E3%85%81spring-PARTJPA)
+    - [스프링 데이터 JPA](https://hsb422.tistory.com/entry/spring-PART%EC%8A%A4%ED%94%84%EB%A7%81-%EB%8D%B0%EC%9D%B4%ED%84%B0-JPA)
+    - [QueryDSL](https://hsb422.tistory.com/entry/spring-PARTQuerydsl)
+
+12. spring transaction ~
 

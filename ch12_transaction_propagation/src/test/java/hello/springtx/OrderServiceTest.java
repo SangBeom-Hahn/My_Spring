@@ -51,7 +51,15 @@ class OrderServiceTest {
     @Test
     void bizEx() throws NotEnoughMoneyException {
         Order order = new Order();
-        order.setUsername("잔고부족");
+        order.setUsername("예외고객___");
+
+        for (PayStatus value : PayStatus.values()) {
+            log.info("values() = {}", value);
+        }
+
+        log.info("name() = {}", PayStatus.COMP.name());
+        log.info("desc() = {}", PayStatus.COMP.desc);
+        log.info("valueOf() = {}", PayStatus.valueOf("COMP"));
 
         try {
             orderService.order(order);

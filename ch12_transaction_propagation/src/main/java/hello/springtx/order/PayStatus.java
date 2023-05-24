@@ -4,7 +4,7 @@ public enum PayStatus {
     COMP("정상"),
     WAIT("대기");
 
-    String desc;
+    public String desc;
 
     PayStatus(String desc) {
         this.desc = desc;

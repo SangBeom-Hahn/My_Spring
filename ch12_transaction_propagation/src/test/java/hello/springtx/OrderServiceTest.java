@@ -31,7 +31,6 @@ class OrderServiceTest {
         order.setUsername("정상");
 
         orderService.order(order);
-        log.info("hi {}", dataSource.getClass());
 
         Order findOrder = orderRepository.findById(order.getId()).get();
         assertThat(findOrder.getPayStatus()).isEqualTo(PayStatus.COMP);
@@ -52,14 +51,6 @@ class OrderServiceTest {
     void bizEx() throws NotEnoughMoneyException {
         Order order = new Order();
         order.setUsername("예외고객___");
-
-        for (PayStatus value : PayStatus.values()) {
-            log.info("values() = {}", value);
-        }
-
-        log.info("name() = {}", PayStatus.COMP.name());
-        log.info("desc() = {}", PayStatus.COMP.desc);
-        log.info("valueOf() = {}", PayStatus.valueOf("COMP"));
 
         try {
             orderService.order(order);

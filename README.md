@@ -104,4 +104,5 @@ To be Spring Master!!
 12. spring transaction ~
     - [스프링 트랜잭션 이해](https://hsb422.tistory.com/entry/%E3%85%81spring-PART%EC%8A%A4%ED%94%84%EB%A7%81-%ED%8A%B8%EB%9E%9C%EC%9E%AD%EC%85%98-%EC%9D%B4%ED%95%B4)
     - [트랜잭션 전파 기본](https://hsb422.tistory.com/entry/%E3%85%87%E3%84%B4)
+    - [트랜잭션 전파 활용](https://hsb422.tistory.com/entry/%E3%85%85%E3%84%B1)
 

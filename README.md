@@ -106,3 +106,4 @@ To be Spring Master!!
     - [트랜잭션 전파 기본](https://hsb422.tistory.com/entry/%E3%85%87%E3%84%B4)
     - [트랜잭션 전파 활용](https://hsb422.tistory.com/entry/%E3%85%85%E3%84%B1)
 
+13. JPA ~ 

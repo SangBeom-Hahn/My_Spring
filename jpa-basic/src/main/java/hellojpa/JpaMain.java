@@ -13,12 +13,9 @@ public class JpaMain {
         tx.begin();
 
         try {
-            List<Member> resultList = em.createQuery("select m from Member as m", Member.class)
-                    .getResultList();
-
-            for (Member member : resultList) {
-                System.out.println("member id = " + member.getId());
-            }
+            Member member = em.find(Member.class, 150L);
+            member.setName("ZZZZ");
+            System.out.println("===================");
 
             tx.commit();
         } catch (Exception e) {
@@ -30,3 +27,4 @@ public class JpaMain {
         emf.close();
     }
 }
+

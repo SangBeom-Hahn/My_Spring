@@ -13,8 +13,11 @@ public class JpaMain {
         tx.begin();
 
         try {
-            Member member = em.find(Member.class, 150L);
-            member.setName("ZZZZ");
+            Member member = em.find(Member.class, 200L);
+            member.setName("AAAA");
+
+            em.detach(member);
+
             System.out.println("===================");
 
             tx.commit();

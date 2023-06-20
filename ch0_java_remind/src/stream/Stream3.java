@@ -24,13 +24,34 @@ class Student implements Comparable<Student> {
     private String name;
     private int totalScore;
     private int ban;
+    private int hak;
+    private boolean isMale;
+
+    enum Level {HIGH, MID, LOW}
 
     public int getBan() {
         return ban;
     }
+
+    public String getName() {
+        return name;
+    }
+
+    public int getTotalScore() {
+        return totalScore;
+    }
+
+    public int getHak() {
+        return hak;
+    }
+
+    public boolean isMale() {
+        return isMale;
+    }
+
     @Override
     public String toString() {
-        return String.format("%s  %d  %d", name, ban, totalScore);
+        return String.format("%s %d %d %d %s", name, ban, totalScore, hak, isMale ? "남" : "여");
     }
 
 
@@ -38,6 +59,14 @@ class Student implements Comparable<Student> {
         this.name = name;
         this.totalScore = totalScore;
         this.ban = ban;
+    }
+
+    public Student(String name, int totalScore, int ban, int hak, boolean isMale) {
+        this.name = name;
+        this.totalScore = totalScore;
+        this.ban = ban;
+        this.hak = hak;
+        this.isMale = isMale;
     }
 
     @Override

@@ -30,6 +30,6 @@ public class Stream4 {
                 "good bye"
         );
 
-//        Stream<String> strStream = stream.flatMap(Arrays::stream);
+
     }
 }

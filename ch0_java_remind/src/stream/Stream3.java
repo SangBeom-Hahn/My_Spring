@@ -1,31 +1,32 @@
 package stream;
 
+import java.util.Arrays;
 import java.util.Comparator;
 import java.util.stream.Stream;
 
 public class Stream3 {
     public static void main(String[] args) {
-        Stream<Student> studentStream = Stream.of(
-                new Student("a", 300, 3),
-                new Student("a", 400, 3),
-                new Student("b", 200, 1),
-                new Student("b", 500, 1)
-        );
+        Student[] students = {
+                new Student("a", 100, 3),
+                new Student("b", 300, 4)
+        };
 
-        studentStream.sorted(Comparator.comparing((Student s) -> s.getBan()).reversed()
-                        .thenComparing(Comparator.naturalOrder()))
-                .forEach(System.out::println);
+//        studentStream.sorted(Comparator.comparing((Student s) -> s.getBan()).reversed()
+//                        .thenComparing(Comparator.naturalOrder()))
+//                .forEach(System.out::println);
 
-
+        System.out.println(Arrays.toString(students));
+        Arrays.sort(students, (Student s1, Student s2) -> s1.totalScore < s2.totalScore ? 1 : -1);
+        System.out.println(Arrays.toString(students));
     }
 }
 
-class Student implements Comparable<Student> {
-    private String name;
-    private int totalScore;
-    private int ban;
-    private int hak;
-    private boolean isMale;
+class Student{
+    String name;
+    int totalScore;
+    int ban;
+    int hak;
+    boolean isMale;
 
     enum Level {HIGH, MID, LOW}
 
@@ -69,8 +70,8 @@ class Student implements Comparable<Student> {
         this.isMale = isMale;
     }
 
-    @Override
-    public int compareTo(Student s) {
-        return s.totalScore - this.totalScore;
-    }
+//    @Override
+//    public int compareTo(Student s) {
+//        return s.totalScore - this.totalScore;
+//    }
 }

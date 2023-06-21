@@ -1,11 +1,12 @@
 package lambda;
 
 import java.lang.reflect.Array;
-import java.util.Arrays;
-import java.util.Comparator;
-import java.util.List;
+import java.util.*;
+import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 import java.util.stream.Stream;
+
+import static java.util.stream.Collectors.*;
 
 public class hi {
     public static void main(String[] args) {
@@ -14,22 +15,29 @@ public class hi {
                 new Student("a", 7, 500),
                 new Student("b", 8, 600)
         };
-//
-//        Stream<Student> stream = Stream.of(students);
-//        stream.sorted(Comparator.comparing((Student student) -> student.getTotalScore()))
-//                .forEach(System.out::println);
-
-
-//        @Override
-//        public int compareTo(Student s) {
-//            return this.totalScore < s.totalScore ? 1 : -1;
-//        }
 
         String[] strArray = {"aac", "ac=7", "a", "ad33333"};
 
-        System.out.println(Arrays.toString(strArray));
-//        Arrays.sort(strArray, Integer::compare);
-        System.out.println(Arrays.toString(strArray));
+//        List<Integer> stuBans = Stream.of(students)
+//                .map(Student::getBan)
+//                .collect(toList());
+//        Map<Integer, Student> studentMap = Stream.of(students)
+//                .collect(toMap(student -> student.getBan(), student -> student));
+//
+//        Student[] studentArr = Stream.of(students).toArray(Student[]::new);
+        Stream<Student> studentStream = Stream.of(students);
+//        Long studentCnt = studentStream.collect(counting());
+//        Integer totalScore = studentStream.collect(summingInt(Student::getTotalScore));
+
+        Optional<Student> maxStudent = studentStream.collect(maxBy(Comparator.comparingInt(Student::getTotalScore)));
+        System.out.println(maxStudent.get());
+
+        IntStream intStream = new Random().ints();
+        OptionalInt gob = intStream.reduce((int a, int b) -> a * b);
+
+        Optional<Integer> groupGob = intStream.boxed().collect(reducing(((integer, integer2) -> integer * integer2)));
+        String nameJoining = studentStream.map(Student::getName).collect(joining());
+
     }
 }
 
@@ -50,6 +58,8 @@ class Student implements Comparable<Student>{
     int ban;
     int totalScore;
 
+    boolean isMale;
+
     public Student(String name, int ban, int totalScore) {
         this.name = name;
         this.ban = ban;
@@ -62,6 +72,14 @@ class Student implements Comparable<Student>{
 
     public int getTotalScore() {
         return totalScore;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public boolean isMale() {
+        return isMale;
     }
 
     @Override

@@ -1,0 +1,15 @@
+
+v	java:S115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(î‘„ê8––ç¶í1
+b
+java:S1124"EReorder the modifiers to comply with the Java Language Specification.(î‘„ê8“–ç¶í1
+X	java:S125"<This block of commented-out lines of code should be removed.(ä¯Âé8“–ç¶í1
+Z	java:S106"9Replace this use of System.out or System.err by a logger.(¥ãπˆ˛ˇˇˇˇ8”–ç¶í1
+]	java:S125"<This block of commented-out lines of code should be removed.(å±¶ó˘ˇˇˇˇ8—∞è¶í1
+a
+java:S1854$"?Remove this useless assignment to local variable "staticInner".(Ñ∞ÜÈ˙ˇˇˇˇ8¡—é¶í1
+S
+java:S1854""7Remove this useless assignment to local variable "bbb".(£Ü«p8÷–ç¶í1
+D
+java:S1481""(Remove this unused "bbb" local variable.(£Ü«p8ÿ–ç¶í1
+R
+java:S1481$"0Remove this unused "staticInner" local variable.(Ñ∞ÜÈ˙ˇˇˇˇ8√—é¶í1

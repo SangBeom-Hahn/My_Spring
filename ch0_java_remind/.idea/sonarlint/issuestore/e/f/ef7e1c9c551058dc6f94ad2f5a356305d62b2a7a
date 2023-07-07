@@ -1,0 +1,27 @@
+
+i	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(¡àÚ™8×Î±ó’1
+X
+java:S1854"6Remove this useless assignment to local variable "s1".(ş±ñÄıÿÿÿÿ8ÜÎ±ó’1
+X
+java:S1854";Remove this useless assignment to local variable "aDouble".(ïÈ”¡8ÜÎ±ó’1
+]
+java:S1854";Remove this useless assignment to local variable "integer".(®ìÚÇÿÿÿÿÿ8ÜÎ±ó’1
+S
+java:S1854"6Remove this useless assignment to local variable "i3".(Ô”Î8ÜÎ±ó’1
+^
+java:S1854	"<Remove this useless assignment to local variable "joinList".(÷¥ÁÛüÿÿÿÿ8ÜÎ±ó’1
+O
+java:S1481	"-Remove this unused "joinList" local variable.(÷¥ÁÛüÿÿÿÿ8ßÎ±ó’1
+I
+java:S1481"'Remove this unused "i2" local variable.(ŒÍô›øÿÿÿÿ8ßÎ±ó’1
+D
+java:S1481"'Remove this unused "i3" local variable.(Ô”Î8àÎ±ó’1
+N
+java:S1481",Remove this unused "integer" local variable.(®ìÚÇÿÿÿÿÿ8àÎ±ó’1
+I
+java:S1481",Remove this unused "aDouble" local variable.(ïÈ”¡8áÎ±ó’1
+I
+java:S1481"'Remove this unused "s1" local variable.(ş±ñÄıÿÿÿÿ8âÎ±ó’1
+Z	java:S106"9Replace this use of System.out or System.err by a logger.(­ËÖşÿÿÿÿ8äÎ±ó’1
+O
+java:S1128"-Remove this unused import 'java.util.Arrays'.(î–˜Éüÿÿÿÿ8ˆ…²ó’1

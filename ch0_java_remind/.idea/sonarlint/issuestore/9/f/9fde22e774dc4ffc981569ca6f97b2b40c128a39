@@ -1,0 +1,58 @@
+
+g	java:S101+"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(óÎ °ùÿÿÿÿ
+V	java:S125"<This block of commented-out lines of code should be removed.(Š˜ô™üÿÿÿÿ
+Q	java:S125,"<This block of commented-out lines of code should be removed.(ÇÎÒ°
+f
+java:S42760"QRefactor this code to use the more specialised Functional Interface 'IntSupplier'(Ñ¤áH
+g
+java:S42766"RRefactor this code to use the more specialised Functional Interface 'IntPredicate'(ª¿Ý;
+f
+java:S42766"QRefactor this code to use the more specialised Functional Interface 'IntConsumer'(ª¿Ý;
+P
+java:S1854X"5Remove this useless assignment to local variable "d".(ñéªïùÿÿÿÿ
+P
+java:S1854V";Remove this useless assignment to local variable "stream3".(æø¡4
+K
+java:S1854U"6Remove this useless assignment to local variable "i1".(Æ’²G
+Q
+java:S1854R";Remove this useless assignment to local variable "stream2".(¢¬ÐÜ
+R
+java:S1854Q"<Remove this useless assignment to local variable "integer1".(ê÷¸¼
+N	java:S106A"9Replace this use of System.out or System.err by a logger.(î¼ùš
+N	java:S106D"9Replace this use of System.out or System.err by a logger.(î¼ùš
+N	java:S106E"9Replace this use of System.out or System.err by a logger.(á‘òƒ
+N	java:S106N"9Replace this use of System.out or System.err by a logger.(¯êŽ§
+C
+java:S1481Q"-Remove this unused "integer1" local variable.(ê÷¸¼
+B
+java:S1481R",Remove this unused "stream2" local variable.(¢¬ÐÜ
+<
+java:S1481U"'Remove this unused "i1" local variable.(Æ’²G
+A
+java:S1481V",Remove this unused "stream3" local variable.(æø¡4
+A
+java:S1481X"&Remove this unused "d" local variable.(ñéªïùÿÿÿÿ
+M	java:S106Z"9Replace this use of System.out or System.err by a logger.(°ö/
+S	java:S106_"9Replace this use of System.out or System.err by a logger.(¹¦…‡úÿÿÿÿ
+Q	java:S125a"<This block of commented-out lines of code should be removed.(¿˜ÐÒ
+S	java:S106h"9Replace this use of System.out or System.err by a logger.(¹¦…‡úÿÿÿÿ
+Q	java:S125k"<This block of commented-out lines of code should be removed.(¼¨øÂ
+S	java:S106l"9Replace this use of System.out or System.err by a logger.(£›»ºûÿÿÿÿ
+N
+java:S1128"3Remove this unused import 'jdk.dynalink.Operation'.(¦ÝçŒüÿÿÿÿ
+`
+java:S1128"ERemove this unused import 'lambda.functional_interface.Myfunctional'.(öÓÆÐÿÿÿÿÿ
+;
+java:S1128"%Remove this unused import 'java.awt'.(ï´µ©
+V
+java:S1128"@Remove this unused import 'java.awt.color.ProfileDataException'.(þó§
+N
+java:S1128"3Remove this unused import 'java.io.FilenameFilter'.(¶àýÝþÿÿÿÿ
+U
+java:S1128":Remove this unused import 'java.util.concurrent.Callable'.(¾×¶îûÿÿÿÿ
+L
+java:S1128"6Remove this unused import 'java.util.concurrent.Flow'.(²þ„Ä
+@
+java:S1068"%Remove this unused "a" private field.(Þ‹®øÿÿÿÿ
+@
+java:S1068"%Remove this unused "b" private field.(Ø¾ì±üÿÿÿÿ

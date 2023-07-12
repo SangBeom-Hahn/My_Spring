@@ -11,5 +11,3 @@ P
  src/exception/exception_adv.java,6\7\67fa1874f3a67a3460f3de972aee20adbf7f1624
 H
 src/string_adv/join.java,e\f\ef7e1c9c551058dc6f94ad2f5a356305d62b2a7a
-I
-src/collections/main.java,4\3\4337ce6d8e2df478aa149d9922356fe1a1d0880c

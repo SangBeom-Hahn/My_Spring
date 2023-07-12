@@ -1,16 +1,20 @@
 package collections;
 
+import com.sun.source.tree.Tree;
+
 import java.util.*;
 
 public class Hi {
     public static void main(String[] args) {
-        List<Person> people = new ArrayList<>(List.of(new Person("A", 1), new Person("B", 2)));
-        Set<Person> A = new TreeSet<>(people);
-        System.out.println(A.toString());
+        HashMap<Object, Object> map = new HashMap<>();
+        map.put("1", 10);
+        map.put("1", 20);
+    
+        System.out.println(map.toString());
     }
 }
 
-class Person {
+class Person implements Comparable<Person>{
     private String name;
     private int age;
     
@@ -41,5 +45,10 @@ class Person {
           "name='" + name + '\'' +
           ", age=" + age +
           '}';
+    }
+    
+    @Override
+    public int compareTo(Person o) {
+        return this.age < o.age ? 1 : -1;
     }
 }

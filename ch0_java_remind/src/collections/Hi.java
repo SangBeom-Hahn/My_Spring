@@ -10,7 +10,7 @@ public class Hi {
         map.put("1", 10);
         map.put("1", 20);
     
-        System.out.println(map.toString());
+        System.out.println(map.containsKey("1"));
     }
 }
 

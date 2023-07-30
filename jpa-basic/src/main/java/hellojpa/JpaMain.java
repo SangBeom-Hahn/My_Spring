@@ -7,27 +7,35 @@ public class JpaMain {
     public static void main(String[] args) {
         EntityManagerFactory emf = Persistence.createEntityManagerFactory("hello");
         EntityManager em = emf.createEntityManager();
-
-        // 트랜잭션 시작
+    
         EntityTransaction tx = em.getTransaction();
         tx.begin();
-
+    
         try {
-            Member member = em.find(Member.class, 200L);
-            member.setName("AAAA");
-
-            em.detach(member);
-
-            System.out.println("===================");
-
+    
+            Member member = new Member();
+            Member member2 = new Member(16L, "B");
+            member.setName("A");
+            member.setId(150L);
+    
+            Member member1 = em.find(Member.class, 150L);
+            member1.setName("zzzz");
+            System.out.println("=== after === ");
+//
+//            Member findMember1 = em.find(Member.class, 101L);
+//            Member findMember2 = em.find(Member.class, 101L);
+//            System.out.println(findMember1 == findMember2);
+            
+//            System.out.println("findMember.id = " + findMember.getId());
+//            System.out.println("findMember.name = " + findMember.getName());
+    
             tx.commit();
         } catch (Exception e) {
             tx.rollback();
         } finally {
             em.close();
         }
-
+        
         emf.close();
     }
 }
-

@@ -1,0 +1,8 @@
+
+T	java:S106"9Replace this use of System.out or System.err by a logger.(Ó°-8èÉ·•1
+Z	java:S106"9Replace this use of System.out or System.err by a logger.(ø÷«›ıÿÿÿÿ8êÉ·•1
+Z	java:S106"9Replace this use of System.out or System.err by a logger.(Å­Ëİúÿÿÿÿ8ëÉ·•1
+V
+java:S1128"4Remove this unused import 'java.time.LocalDateTime'.(æÃ§ƒüÿÿÿÿ8üÉ·•1
+T
+java:S1128"2Remove this unused import 'java.util.Collections'.(¢³ïÓşÿÿÿÿ8ûÊ·•1

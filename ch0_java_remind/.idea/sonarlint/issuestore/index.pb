@@ -11,3 +11,7 @@ P
  src/exception/exception_adv.java,6\7\67fa1874f3a67a3460f3de972aee20adbf7f1624
 H
 src/string_adv/join.java,e\f\ef7e1c9c551058dc6f94ad2f5a356305d62b2a7a
+G
+src/collections/Hi.java,c\0\c07a8ac60df8bfb00236feabb49ed343444178f7
+H
+src/collections/Col.java,d\a\da97ff5dbb2694d906ac4800a9b9d084a4447305

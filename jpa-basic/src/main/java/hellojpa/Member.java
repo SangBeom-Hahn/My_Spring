@@ -1,43 +1,19 @@
 package hellojpa;
 
 import javax.persistence.*;
+import java.time.LocalDate;
 import java.util.Date;
 
 @Entity
+@SequenceGenerator(
+        name = "MEMBER_SEQ_GENERATOR",
+        sequenceName = "MEMBER_SEQ", //매핑할 데이터베이스 시퀀스 이름
+        initialValue = 1, allocationSize = 1)
 public class Member {
-    public Member() {
-    }
-    
     @Id
+    @GeneratedValue(strategy = GenerationType.SEQUENCE,
+            generator = "MEMBER_SEQ_GENERATOR")
     private Long id;
-    @Column(name = "name", insertable = false, updatable = false)
-    private String username;
-    
-    @Column(nullable = false, unique = true)
-    private Integer age;
-    
-    public Member(Long id, String username, Integer age) {
-        this.id = id;
-        this.username = username;
-        this.age = age;
-    }
-    
-    public Member(String username) {
-        this.username = username;
-    }
-    
-    //    @Enumerated(EnumType.STRING)
-//    private RoleType roleType;
-//    @Temporal(TemporalType.TIMESTAMP)
-//    private Date createdDate;
-//    @Temporal(TemporalType.TIMESTAMP)
-//    private Date lastModifiedDate;
-//    @Lob
-//    private String description;
-//
-//    @Transient
-//    private int temp;
-    //Getter, Setter…
     
     public Long getId() {
         return id;
@@ -45,21 +21,5 @@ public class Member {
     
     public void setId(Long id) {
         this.id = id;
-    }
-    
-    public String getUsername() {
-        return username;
-    }
-    
-    public void setUsername(String username) {
-        this.username = username;
-    }
-    
-    public Integer getAge() {
-        return age;
-    }
-    
-    public void setAge(Integer age) {
-        this.age = age;
     }
 }

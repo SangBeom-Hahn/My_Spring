@@ -1,0 +1,8 @@
+
+{	java:S115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(†ëŞøÿÿÿÿ8øÏÕÕœ1
+U	java:S106
+"9Replace this use of System.out or System.err by a logger.(‚³ 8ö£ÖÕœ1
+E
+java:S1068"(Remove this unused "name" private field.(Ë¥¼8ÿÏÕÕœ1
+O
+java:S1144	"-Remove this unused private "validate" method.(·ø‰şÿÿÿÿ8€ĞÕÕœ1

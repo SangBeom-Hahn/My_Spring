@@ -11,7 +11,11 @@ H
 src/class_adv/Inner.java,e\f\ef7c93fd7ec7093d7d02b1c6ca926a0ab8cf389f
 H
 src/string_adv/join.java,e\f\ef7e1c9c551058dc6f94ad2f5a356305d62b2a7a
-G
-src/collections/Hi.java,c\0\c07a8ac60df8bfb00236feabb49ed343444178f7
 H
 src/collections/Col.java,d\a\da97ff5dbb2694d906ac4800a9b9d084a4447305
+G
+src/collections/Hi.java,c\0\c07a8ac60df8bfb00236feabb49ed343444178f7
+C
+src/inter/test.java,a\1\a1a02f772af4bc135e2afbb1daa7931150584a99
+K
+src/inter/AbstractTest.java,f\7\f763eff37c792328cb38eafd31c526ea54079920

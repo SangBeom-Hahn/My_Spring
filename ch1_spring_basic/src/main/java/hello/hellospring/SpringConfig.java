@@ -12,14 +12,14 @@ import org.springframework.context.annotation.Configuration;
 import javax.sql.DataSource;
 
 @Configuration
-    public class SpringConfig  {
-        DataSource dataSource;
+public class SpringConfig  {
+    DataSource dataSource;
 
-        public SpringConfig(DataSource dataSource) {
-            this.dataSource = dataSource;
-        }
+    public SpringConfig(DataSource dataSource) {
+        this.dataSource = dataSource;
+    }
 
-        @Bean
+    @Bean
     public MemberService memberService() {
         return new MemberService(MemberRepository());
     }

@@ -9,6 +9,8 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.net.URI;
+
 @RestController
 //@ResponseBody
 public class ResponseBodyController {
@@ -18,8 +20,8 @@ public class ResponseBodyController {
         HelloData helloData = new HelloData();
         helloData.setUsername("hsb");
         helloData.setAge(25);
-
-        return new ResponseEntity<>(helloData, HttpStatus.OK);
+        
+        return ResponseEntity.ok(helloData);
     }
 
     @GetMapping("/resonse-body-jsonv2")

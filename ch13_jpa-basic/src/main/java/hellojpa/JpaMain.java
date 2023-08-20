@@ -1,6 +1,7 @@
 package hellojpa;
 
 import hellojpa.domain.Member;
+import hellojpa.domain.Movie;
 import hellojpa.domain.Team;
 
 import javax.persistence.EntityManager;
@@ -17,26 +18,18 @@ public class JpaMain {
         tx.begin();
         
         try {
-            Team team = new Team();
-            team.setName("TeamA");
-            em.persist(team);
+            Movie movie = new Movie();
+            movie.setDirector("aaaa");
+            movie.setActor("bbbb");
+            movie.setName("바람과 함께");
+            movie.setPrice(10000);
             
-            Member member = new Member();
-            member.setName("member1");
-            em.persist(member);
-            team.addMember(member);
+            em.persist(movie);
+            em.flush();
+            em.clear();
+    
+            em.find(Movie.class, movie.getId());
             
-//            em.flush();
-//            em.clear();
-    
-            Team findTeam = em.find(Team.class, team.getId());
-            List<Member> members = findTeam.getMembers();
-    
-            for (Member m : members) {
-                System.out.println("m = " + m.getName());
-            }
-    
-    
             tx.commit();
         } catch (Exception e) {
             tx.rollback();

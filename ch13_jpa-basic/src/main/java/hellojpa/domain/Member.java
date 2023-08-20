@@ -1,7 +1,6 @@
 package hellojpa.domain;
 
 import javax.persistence.*;
-import java.util.concurrent.locks.Lock;
 
 @Entity
 public class Member {

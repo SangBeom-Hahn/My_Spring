@@ -1,10 +1,6 @@
 
 7
 pom.xml,4\4\442292b8a7efeabbe4cc176709b833b1792140ec
-W
-'src/main/java/hellojpa/domain/Team.java,a\b\abfd2e5a0399da20b77eb9a58e4ef3480eb8c33d
-Y
-)src/main/java/hellojpa/domain/Member.java,d\c\dc537b37026ee91631de010946451a6a3390d73a
 Y
 )src/main/java/hellojpa/domain/Locker.java,2\c\2c734f9dde101a32ab13dcfdfe548487fcd13b12
 _
@@ -13,13 +9,19 @@ _
 +src/main/java/hellojpa/domain/Category.java,3\5\35b7b741bbfe31edaad790bc1a5a94c605d9e815
 [
 +src/main/java/hellojpa/domain/Delivery.java,a\1\a1f9aa336237684ac31673da9fb76a449962f56f
-X
-(src/main/java/hellojpa/domain/Movie.java,6\0\60d3e9b115fde1031b828cea45462183c2388f5c
 W
-'src/main/java/hellojpa/domain/Book.java,7\b\7b6558c75b0130a90354518c3e90e2b31a7abd41
-S
-#src/main/java/hellojpa/JpaMain.java,3\8\3818751ba7a7e2bbfde51b6c3126a02f97f5a644
+'src/main/java/hellojpa/domain/Team.java,a\b\abfd2e5a0399da20b77eb9a58e4ef3480eb8c33d
 X
 (src/main/java/hellojpa/domain/Album.java,d\3\d33aca7f5600b4d662ca682fa9e91685f341b6c0
 W
+'src/main/java/hellojpa/domain/Book.java,7\b\7b6558c75b0130a90354518c3e90e2b31a7abd41
+X
+(src/main/java/hellojpa/domain/Movie.java,6\0\60d3e9b115fde1031b828cea45462183c2388f5c
+]
+-src/main/java/hellojpa/domain/BaseEntity.java,e\f\ef9a94e5a6953db82e66ba8401db3df39d59a614
+W
 'src/main/java/hellojpa/domain/Item.java,8\1\816c7488e3e483afbe28530a91665f1a71578cbd
+S
+#src/main/java/hellojpa/JpaMain.java,3\8\3818751ba7a7e2bbfde51b6c3126a02f97f5a644
+Y
+)src/main/java/hellojpa/domain/Member.java,d\c\dc537b37026ee91631de010946451a6a3390d73a

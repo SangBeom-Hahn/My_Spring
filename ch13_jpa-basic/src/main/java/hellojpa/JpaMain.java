@@ -1,9 +1,6 @@
 package hellojpa;
 
-import hellojpa.domain.Book;
-import hellojpa.domain.Member;
-import hellojpa.domain.Movie;
-import hellojpa.domain.Team;
+import hellojpa.domain.*;
 import org.hibernate.Hibernate;
 
 import javax.persistence.EntityManager;
@@ -21,25 +18,21 @@ public class JpaMain {
         tx.begin();
         
         try {
-            Team team = new Team();
-            team.setName("hi");
-            em.persist(team);
+            Parent parent = new Parent();
+            Child child1 = new Child();
+            Child child2 = new Child();
             
-            Member member = new Member();
-            member.setName("hello1");
-            member.setTeam(team);
-            em.persist(member);
+            parent.addChild(child1);
+            parent.addChild(child2);
+            
+            em.persist(parent);
             
             em.flush();
             em.clear();
     
-            Member findM = em.find(Member.class, member.getId());
-            System.out.println("findM.getTeam().getClass() = " + findM.getTeam().getClass());
+            Parent parent1 = em.find(Parent.class, parent.getId());
+            em.remove(parent1);
     
-            System.out.println("===");
-            findM.getTeam().getName();
-            System.out.println("===");
-            
             tx.commit();
             
         } catch (Exception e) {

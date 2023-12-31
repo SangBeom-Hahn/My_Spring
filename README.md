@@ -101,9 +101,10 @@ To be Spring Master!!
     - [QueryDSL](https://hsb422.tistory.com/entry/spring-PARTQuerydsl)
     - [데이터 접근 기술 활용 방안](https://hsb422.tistory.com/entry/%E3%85%81spring-PART%EB%8D%B0%EC%9D%B4%ED%84%B0-%EC%A0%91%EA%B7%BC-%EA%B8%B0%EC%88%A0-%ED%99%9C%EC%9A%A9-%EB%B0%A9%EC%95%88)
 
-12. spring transaction ~
+12. spring transaction
     - [스프링 트랜잭션 이해](https://hsb422.tistory.com/entry/%E3%85%81spring-PART%EC%8A%A4%ED%94%84%EB%A7%81-%ED%8A%B8%EB%9E%9C%EC%9E%AD%EC%85%98-%EC%9D%B4%ED%95%B4)
     - [트랜잭션 전파 기본](https://hsb422.tistory.com/entry/%E3%85%87%E3%84%B4)
     - [트랜잭션 전파 활용](https://hsb422.tistory.com/entry/%E3%85%85%E3%84%B1)
 
-13. JPA ~ 
+13. JPA
+    - [JPA 환경 구축](https://hsb422.tistory.com/entry/%E3%85%81JPA-PARTJPA-%ED%99%98%EA%B2%BD-%EA%B5%AC%EC%B6%95-%EB%B0%8F-%EC%8B%A4%EC%8A%B5)

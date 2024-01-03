@@ -110,3 +110,4 @@ To be Spring Master!!
     - [JPA 환경 구축](https://hsb422.tistory.com/entry/%E3%85%81JPA-PARTJPA-%ED%99%98%EA%B2%BD-%EA%B5%AC%EC%B6%95-%EB%B0%8F-%EC%8B%A4%EC%8A%B5)
     - [영속성 관리](https://hsb422.tistory.com/entry/%E3%85%81JPA-PART%EC%98%81%EC%86%8D%EC%84%B1-%EA%B4%80%EB%A6%AC)
     - [다양한 연관관계 매핑](https://hsb422.tistory.com/entry/%E3%85%81JPA-PART)
+    - [고급 매핑](https://hsb422.tistory.com/entry/%E3%85%81JPA-PART%EA%B3%A0%EA%B8%89-%EB%A7%A4%ED%95%91)

@@ -27,3 +27,9 @@ S
 #src/main/java/hellojpa/JpaMain.java,3\8\3818751ba7a7e2bbfde51b6c3126a02f97f5a644
 [
 +src/main/java/hellojpa/domain/Category.java,3\5\35b7b741bbfe31edaad790bc1a5a94c605d9e815
+N
+src/main/java/jpql/Member.java,e\a\ead98430e2d109285da55ccb7104a4bb09edb75b
+L
+src/main/java/jpql/Team.java,c\8\c853ec6c8e04d0c966d79bcfbc98bdb75a69e3ac
+O
+src/main/java/jpql/JpaMain.java,9\f\9f24ef356e6b68f862086b0de6fe8df81b754b15

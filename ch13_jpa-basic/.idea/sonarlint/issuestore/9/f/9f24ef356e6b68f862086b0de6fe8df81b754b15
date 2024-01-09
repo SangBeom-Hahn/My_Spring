@@ -1,4 +1,6 @@
 
-j
-java:S1192"HDefine a constant instead of duplicating this literal "member1" 3 times.(¹ù•òûÿÿÿÿ8²¬¡Î1
-G	java:S106*"+Replace this use of System.out by a logger.(¾—³š8ôÒ¡Î1
+D
+java:S1481'"(Remove this unused "cnt" local variable.(¯¼³B8¾Â¬ëÎ1
+G	java:S106+"+Replace this use of System.out by a logger.(ºÍê8¡» ëÎ1
+M
+java:S1128"+Remove this unused import 'java.util.List'.(Õë±Äøÿÿÿÿ8ÜøƒëÎ1

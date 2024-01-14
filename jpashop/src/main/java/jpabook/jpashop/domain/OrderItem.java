@@ -3,36 +3,42 @@ package jpabook.jpashop.domain;
 import jpabook.jpashop.domain.item.Item;
 import lombok.Getter;
 import lombok.Setter;
-import org.springframework.data.annotation.Id;
 
 import javax.persistence.*;
 
-import static javax.persistence.FetchType.*;
-
 @Entity
-@Getter
-@Setter
+@Getter @Setter
 public class OrderItem {
-
-    @javax.persistence.Id
-    @Id
-    @GeneratedValue
+    @Id @GeneratedValue
     @Column(name = "order_item_id")
     private Long id;
-    @ManyToOne(fetch = LAZY)
+
+    @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "item_id")
     private Item item;
-    @ManyToOne(fetch = LAZY)
+
+    @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "order_id")
     private Order order;
+
     private int orderPrice;
     private int count;
 
-    public void setId(Long id) {
-        this.id = id;
+    public void cancel() {
+        getItem().addStock(count);
     }
 
-    public Long getId() {
-        return id;
+    public static OrderItem createOrderItem(Item item, int orderPrice, int count) {
+        OrderItem orderItem = new OrderItem();
+        orderItem.setItem(item);
+        orderItem.setOrderPrice(orderPrice);
+        orderItem.setCount(count);
+
+        item.removeStock(count);
+        return orderItem;
+    }
+
+    public int getTotalPrice() {
+        return getOrderPrice() * getCount();
     }
 }

@@ -12,7 +12,10 @@ import org.springframework.data.domain.Sort;
 import org.springframework.test.annotation.Rollback;
 import org.springframework.transaction.annotation.Transactional;
 import study.datajpa.entity.Member;
+import study.datajpa.entity.Team;
 
+import javax.persistence.EntityManager;
+import javax.persistence.PersistenceContext;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Optional;
@@ -25,6 +28,12 @@ import static org.assertj.core.api.Assertions.assertThat;
 class MemberJpaRepositoryTest {
     @Autowired
     MemberRepository memberRepository;
+
+    @Autowired
+    TeamRepository teamRepository;
+
+    @PersistenceContext
+    EntityManager em;
 
     @Test
     public void testMember() {
@@ -168,16 +177,68 @@ class MemberJpaRepositoryTest {
                 PageRequest.of(0, 3, Sort.by(Sort.Direction.DESC, "username"));
 
         // when
-        Page<Member> page = memberRepository.findByAge(age, pageRequest);
-        page.map(member3 -> new MemberDto(member3.getTeam(), member3.getAge()))
+//        Page<Member> page = memberRepository.findByAge(age, pageRequest);
+//        page.map(member3 -> new MemberDto(member3.getTeam(), member3.getAge()))
 
         // then
-        List<Member> content = page.getContent();
+//        List<Member> content = page.getContent();
 //        long totalElements = page.getTotalElements();
 
-        for (Member member3 : content) {
-            System.out.println("member3 = " + member3);
-        }
+//        for (Member member3 : content) {
+//            System.out.println("member3 = " + member3);
+//        }
 //        System.out.println("totalElements = " + totalElements);
+    }
+
+    @Test
+    @DisplayName("")
+    void test6() {
+        // given
+        Team teamA = new Team("A");
+        Team teamB = new Team("B");
+        teamRepository.save(teamA);
+        teamRepository.save(teamB);
+
+        Member memberA = new Member("A", 10, teamA);
+        Member memberBA = new Member("B", 10, teamB);
+        memberRepository.save(memberA);
+        memberRepository.save(memberBA);
+
+        // when
+
+
+        // then
+//        List<Member> members = memberRepository.findEntityGraphByUsername("A");
+//
+//        for (Member member : members) {
+//            System.out.println("member.getTeam().getName() = " + member.getTeam().getName());
+//        }
+    }
+
+    @Test
+    @DisplayName("")
+    void test7() {
+        // given
+        Member member = new Member("member1");
+        memberRepository.save(member);
+        em.flush();
+        em.clear();
+
+        // when
+        Member fMember1 = memberRepository.findReadOnlyByUsername("member1");
+        fMember1.setUsername("2");
+
+        // then
+    }
+
+    @Test
+    @DisplayName("")
+    void test8() {
+        // given
+        List<Member> memberCustom = memberRepository.findMemberCustom();
+
+        // when
+
+        // then
     }
 }

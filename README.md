@@ -13,6 +13,7 @@ To be Spring Master!!
 01. spring core
     - [Spring 프레임워크 사용 목적 및 Web 통신 원리](https://hsb422.tistory.com/entry/%EB%AC%B8%EB%B2%95-2)    
     - [컨테이너 계층, 싱글톤 컨테이너](https://hsb422.tistory.com/entry/%EB%AC%B8%EB%B2%95-%EC%BB%A8%ED%85%8C%EC%9D%B4%EB%84%88-%EA%B3%84%EC%B8%B5-%EC%8B%B1%EA%B8%80%ED%86%A4-%EC%BB%A8%ED%85%8C%EC%9D%B4%EB%84%88)
+    - [빈 생명주기 콜백](https://hsb422.tistory.com/entry/s)
     - ing ~
 
 

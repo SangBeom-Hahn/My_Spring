@@ -15,14 +15,6 @@ To be Spring Master!!
     - [컨테이너 계층, 싱글톤 컨테이너](https://hsb422.tistory.com/entry/%EB%AC%B8%EB%B2%95-%EC%BB%A8%ED%85%8C%EC%9D%B4%EB%84%88-%EA%B3%84%EC%B8%B5-%EC%8B%B1%EA%B8%80%ED%86%A4-%EC%BB%A8%ED%85%8C%EC%9D%B4%EB%84%88)
     - [빈 생명주기 콜백](https://hsb422.tistory.com/entry/s)
     - [의존관계 자동 주입](https://hsb422.tistory.com/entry/%EB%AC%B8%EB%B2%95-%EC%BB%B4%ED%8F%AC%EB%84%8C%ED%8A%B8-%EC%8A%A4%EC%BA%94)
-    - ing ~
-
-
-    - [순수 자바코드를 스프링으로 전환](https://hsb422.tistory.com/entry/%E3%85%81spring-PART)
-    - [스프링 컨테이너 계층, 싱글톤 컨테이너](https://hsb422.tistory.com/entry/%E3%85%81spring-PART%EC%8A%A4%ED%94%84%EB%A7%81-%EC%BB%A8%ED%85%8C%EC%9D%B4%EB%84%88-%EA%B3%84%EC%B8%B5-%EC%8B%B1%EA%B8%80%ED%86%A4-%EC%BB%A8%ED%85%8C%EC%9D%B4%EB%84%88)
-    - [컴포넌트 스캔](https://hsb422.tistory.com/entry/%E3%85%81spring-PART%EC%BB%B4%ED%8F%AC%EB%84%8C%ED%8A%B8-%EC%8A%A4%EC%BA%94)
-    - [의존관계 자동 주입](https://hsb422.tistory.com/entry/%E3%85%81spring-PART%EC%9D%98%EC%A1%B4%EA%B4%80%EA%B3%84-%EC%9E%90%EB%8F%99-%EC%A3%BC%EC%9E%85)
-    - [빈 생명주기 콜백](https://hsb422.tistory.com/entry/s)
     - [빈 스코프](https://hsb422.tistory.com/entry/%E3%84%B9%E3%85%87%E3%84%B4)
     - [request scope](https://hsb422.tistory.com/entry/spring-PARTrequest-scope)
 

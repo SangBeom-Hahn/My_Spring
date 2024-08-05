@@ -20,17 +20,12 @@ To be Spring Master!!
 
 
 2. spring mvc
-    - ing~
-    - [WAS, 서블릿, 멀티스레드, UI 지식](https://hsb422.tistory.com/entry/%E3%85%8E)
-    - [서블릿 프로그래밍 개요](https://hsb422.tistory.com/entry/%E3%85%81spring-PART%EC%84%9C%EB%B8%94%EB%A6%BF)
+    - [웹 서버와 서블릿](https://hsb422.tistory.com/entry/%EB%AC%B8%EB%B2%95-%EC%9B%B9-%EC%84%9C%EB%B2%84%EC%99%80-%EC%84%9C%EB%B8%94%EB%A6%BF)
+    - [Spring 핸들러 어댑터, API 설계 실전](https://hsb422.tistory.com/entry/%EB%AC%B8%EB%B2%95-Spring-%ED%95%B8%EB%93%A4%EB%9F%AC-%EC%96%B4%EB%8C%91%ED%84%B0)
+    - [요청과 응답, HttpMessageConverter](https://hsb422.tistory.com/entry/%EB%AC%B8%EB%B2%95-%EC%9A%94%EC%B2%AD%EA%B3%BC-%EC%9D%91%EB%8B%B5-HttpMessageConverter)
     - [HTTP의 모든 것](https://hsb422.tistory.com/entry/%E3%85%81-spring-PARTHTTP%EC%9D%98-%EB%AA%A8%EB%93%A0-%EA%B2%83-1)
     - [서블릿 jsp로 웹 어플리케이션 개발](https://hsb422.tistory.com/entry/%E3%85%81spring-PART%EC%84%9C%EB%B8%94%EB%A6%BF-jsp%EB%A1%9C-%EC%9B%B9-%EC%96%B4%ED%94%8C%EB%A6%AC%EC%BC%80%EC%9D%B4%EC%85%98-%EA%B0%9C%EB%B0%9C)
     - [jsp MVC 패턴, 한계점](https://hsb422.tistory.com/entry/spring-PARTJSP-MVC-%ED%8C%A8%ED%84%B4-%ED%95%9C%EA%B3%84%EC%A0%90)
-    - [MVC 프레임워크 만들기](https://hsb422.tistory.com/entry/spring-PARTMVC-%ED%94%84%EB%A0%88%EC%9E%84%EC%9B%8C%ED%81%AC-%EB%A7%8C%EB%93%A4%EA%B8%B0)
-    - [유연한 컨트롤러](https://hsb422.tistory.com/entry/%E3%85%81spring-PART%EC%9C%A0%EC%97%B0%ED%95%9C-%EC%BB%A8%ED%8A%B8%EB%A1%A4%EB%9F%AC)
-    - [스프링 MVC 시작](https://hsb422.tistory.com/entry/spring-PART%EC%8A%A4%ED%94%84%EB%A7%81-MVC)
-    - [스프링 MVC 기본 기능, API 설계 실전](https://hsb422.tistory.com/entry/ew)
-    - [스프링 기본 기능2, 웹 쇼핑몰 개발](https://hsb422.tistory.com/entry/%E3%85%81spring-PART%EC%8A%A4%ED%94%84%EB%A7%81-%EA%B8%B0%EB%B3%B8-%EA%B8%B0%EB%8A%A5-2)
 
 
 4. spring thymeleaf
@@ -43,9 +38,8 @@ To be Spring Master!!
 
 6. spring login, validation
     - [로그인, 세션관리](https://hsb422.tistory.com/entry/spring-PART%EB%A1%9C%EA%B7%B8%EC%9D%B8-%EC%84%B8%EC%85%98%EA%B4%80%EB%A6%AC)
-    - [필터, 인터셉터](https://hsb422.tistory.com/entry/spring-PART%ED%95%84%ED%84%B0)
-    - [검증](https://hsb422.tistory.com/entry/ds)
-    - [빈 검증](https://hsb422.tistory.com/entry/%E3%85%81spring-PART%EB%B9%88-%EA%B2%80%EC%A6%9D)
+    - [필터, 인터셉터](https://hsb422.tistory.com/entry/%E3%85%81%EB%AC%B8%EB%B2%95-%ED%95%84%ED%84%B0)
+    - [검증](https://hsb422.tistory.com/entry/%EB%AC%B8%EB%B2%95-%EA%B2%80%EC%A6%9D)
 
 
 7. spring exception

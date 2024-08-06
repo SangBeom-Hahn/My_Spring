@@ -43,8 +43,7 @@ To be Spring Master!!
 
 
 7. spring exception
-    - [예외처리와 오류 페이지](https://hsb422.tistory.com/entry/gfg)
-    - [API 예외처리](https://hsb422.tistory.com/entry/spring-PARTAPI-%EC%98%88%EC%99%B8%EC%B2%98%EB%A6%AC)
+    - [API 예외처리](https://hsb422.tistory.com/entry/%EB%AC%B8%EB%B2%95-%EC%8A%A4%ED%94%84%EB%A7%81-%EC%98%88%EC%99%B8%EC%B2%98%EB%A6%AC)
 
 
 8. spring typeconverter

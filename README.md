@@ -51,8 +51,7 @@ To be Spring Master!!
     
 
 9. spring upload
-    - ing~
-    - [파일 업로드](https://hsb422.tistory.com/entry/%E3%85%81spring-PART%ED%8C%8C%EC%9D%BC-%EC%97%85%EB%A1%9C%EB%93%9C)
+    - [파일 업로드](https://hsb422.tistory.com/entry/%E3%85%81%EB%AC%B8%EB%B2%95-2)
 
 
 11. spring jdbc

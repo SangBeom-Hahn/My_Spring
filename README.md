@@ -55,7 +55,8 @@ To be Spring Master!!
 
 
 11. spring jdbc
-    - [jdbc의 이해](https://hsb422.tistory.com/entry/%E3%85%81spring-PARTJDBC%EC%9D%98-%EC%9D%B4%ED%95%B4)
+    - [JDBC 추상화를 한 이유](https://hsb422.tistory.com/entry/%E3%85%81spring-PARTJDBC%EC%9D%98-%EC%9D%B4%ED%95%B4)
+    - ing
     - [데이터 소스](https://hsb422.tistory.com/entry/%E3%85%87%E3%84%B4%E3%84%B9)
     - [트랜잭션 이해](https://hsb422.tistory.com/entry/spring-PART%ED%8A%B8%EB%9E%9C%EC%9E%AD%EC%85%98)
     - [스프링 트랜잭션 적용](https://hsb422.tistory.com/entry/spring)

@@ -56,12 +56,9 @@ To be Spring Master!!
 
 11. spring jdbc
     - [JDBC 추상화를 한 이유](https://hsb422.tistory.com/entry/%E3%85%81spring-PARTJDBC%EC%9D%98-%EC%9D%B4%ED%95%B4)
-    - ing
-    - [데이터 소스](https://hsb422.tistory.com/entry/%E3%85%87%E3%84%B4%E3%84%B9)
-    - [트랜잭션 이해](https://hsb422.tistory.com/entry/spring-PART%ED%8A%B8%EB%9E%9C%EC%9E%AD%EC%85%98)
-    - [스프링 트랜잭션 적용](https://hsb422.tistory.com/entry/spring)
-    - [자바 예외 이해](https://hsb422.tistory.com/entry/%E3%85%81spring-PART%EC%9E%90%EB%B0%94-%EC%98%88%EC%99%B8-%EC%9D%B4%ED%95%B4)
-    - [스프링 데이터 접근 에외 처리](https://hsb422.tistory.com/entry/%E3%84%B4)
+    - [커넥션과 데이터 소스](https://hsb422.tistory.com/entry/%E3%85%87%E3%84%B4%E3%84%B9)
+    - [스프링 트랜잭션 이해와 적용](https://hsb422.tistory.com/entry/%E3%85%81%EB%AC%B8%EB%B2%95-%ED%8A%B8%EB%9E%9C%EC%9E%AD%EC%85%98)
+    - [스프링 데이터 접근 예외 처리](https://hsb422.tistory.com/manage/newpost/520?type=post&returnURL=ENTRY)
 
 12. spring data
     - [데이터 접근 기술](https://hsb422.tistory.com/entry/%E3%85%87%E3%84%B4%E3%85%81)
@@ -75,12 +72,14 @@ To be Spring Master!!
 
 13. spring transaction
     - [스프링 트랜잭션 이해](https://hsb422.tistory.com/entry/%E3%85%81spring-PART%EC%8A%A4%ED%94%84%EB%A7%81-%ED%8A%B8%EB%9E%9C%EC%9E%AD%EC%85%98-%EC%9D%B4%ED%95%B4)
-    - [트랜잭션 전파 기본](https://hsb422.tistory.com/entry/%E3%85%87%E3%84%B4)
-    - [트랜잭션 전파 활용](https://hsb422.tistory.com/entry/%E3%85%85%E3%84%B1)
+    - [스프링 트랜잭션 전파 활용](https://hsb422.tistory.com/entry/%E3%85%81-%EB%AC%B8%EB%B2%95-%ED%8A%B8%EB%9E%9C)
 
 14. JPA
     - [JPA 환경 구축](https://hsb422.tistory.com/entry/%E3%85%81JPA-PARTJPA-%ED%99%98%EA%B2%BD-%EA%B5%AC%EC%B6%95-%EB%B0%8F-%EC%8B%A4%EC%8A%B5)
-    - [영속성 관리](https://hsb422.tistory.com/entry/%E3%85%81JPA-PART%EC%98%81%EC%86%8D%EC%84%B1-%EA%B4%80%EB%A6%AC)
-    - [다양한 연관관계 매핑](https://hsb422.tistory.com/entry/%E3%85%81JPA-PART)
+    - [JPA 동작 원리(영속성)](https://hsb422.tistory.com/entry/%E3%85%81-%EB%AC%B8%EB%B2%95-JPA-%EB%8F%99%EC%9E%91-%EC%9B%90%EB%A6%AC)
+    - [다양한 연관관계 매핑](https://hsb422.tistory.com/entry/%EB%AC%B8%EB%B2%95-Entity-%EB%A7%A4%ED%95%91-%EC%86%8C%EA%B0%9C)
+    - [연관관계 매핑 시 고려사항](https://hsb422.tistory.com/entry/%E3%85%81%EB%AC%B8%EB%B2%95-%EC%97%B0%EA%B4%80%EA%B4%80%EA%B3%84-%EB%A7%A4%ED%95%91-%EC%8B%9C-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD)
     - [고급 매핑](https://hsb422.tistory.com/entry/%E3%85%81JPA-PART%EA%B3%A0%EA%B8%89-%EB%A7%A4%ED%95%91)
-    - [프록시와 연관관계 관리](https://hsb422.tistory.com/entry/%E3%85%81%ED%94%84%EB%A1%9D%EC%8B%9C%EC%99%80-%EC%97%B0%EA%B4%80%EA%B4%80%EA%B3%84-%EA%B4%80%EB%A6%AC)
+    - [프록시 메커니즘과 부모 자식 life cycle](https://hsb422.tistory.com/entry/%E3%85%81%EB%AC%B8%EB%B2%95-%ED%94%84%EB%A1%9D%EC%8B%9C)
+    - [JPQL과 페치 조인 성능 최적화](https://hsb422.tistory.com/entry/%E3%85%81%EB%AC%B8%EB%B2%95-JPQL%EA%B3%BC-%ED%8E%98%EC%9D%B4-%EC%A1%B0%EC%9D%B8)
+    - [스프링 데이터 JPA 기능](https://hsb422.tistory.com/entry/%E3%85%81-%EB%AC%B8%EB%B2%95-%EC%8A%A4%ED%94%84%EB%A7%81-%EB%8D%B0%EC%9D%B4%ED%84%B0-JPA-%EA%B8%B0%EB%8A%A5)

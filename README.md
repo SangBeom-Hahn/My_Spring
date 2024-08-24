@@ -44,7 +44,7 @@ To be Spring Master!!
 | 블로깅 | 구현 |
 |---|---|
 | [로그인, 세션관리](https://hsb422.tistory.com/entry/spring-PART%EB%A1%9C%EA%B7%B8%EC%9D%B8-%EC%84%B8%EC%85%98%EA%B4%80%EB%A6%AC) |   |
-| [필터, 인터셉터](https://hsb422.tistory.com/entry/%E3%85%81%EB%AC%B8%EB%B2%95-%ED%95%84%ED%84%B0) | [commit](https://github.com/SangBeom-Hahn/cspop-backend/pull/20/commits/2bb879be028f1b0733082d78c65aed463ae609b3#diff-08e38bd5389783190cd94f801d97bb785a3ef1363a6a5a343cecaab809d89ee6) |
+| [필터, 인터셉터](https://hsb422.tistory.com/entry/%E3%85%81%EB%AC%B8%EB%B2%95-%ED%95%84%ED%84%B0) | [Commit](https://github.com/SangBeom-Hahn/cspop-backend/pull/20/commits/2bb879be028f1b0733082d78c65aed463ae609b3#diff-08e38bd5389783190cd94f801d97bb785a3ef1363a6a5a343cecaab809d89ee6) |
 | [검증](https://hsb422.tistory.com/entry/%EB%AC%B8%EB%B2%95-%EA%B2%80%EC%A6%9D) |   |
 
 
@@ -77,18 +77,21 @@ To be Spring Master!!
     - [데이터 접근 기술 활용 방안](https://hsb422.tistory.com/entry/%E3%85%81spring-PART%EB%8D%B0%EC%9D%B4%ED%84%B0-%EC%A0%91%EA%B7%BC-%EA%B8%B0%EC%88%A0-%ED%99%9C%EC%9A%A9-%EB%B0%A9%EC%95%88)
 
 13. spring transaction
-    - [스프링 트랜잭션 이해](https://hsb422.tistory.com/entry/%E3%85%81spring-PART%EC%8A%A4%ED%94%84%EB%A7%81-%ED%8A%B8%EB%9E%9C%EC%9E%AD%EC%85%98-%EC%9D%B4%ED%95%B4)
-    - [스프링 트랜잭션 전파 활용](https://hsb422.tistory.com/entry/%E3%85%81-%EB%AC%B8%EB%B2%95-%ED%8A%B8%EB%9E%9C)
-
-14. JPA
 
 | 블로깅 | 구현 |
 |---|---|
-| [JPA 환경 구축](https://hsb422.tistory.com/entry/%E3%85%81JPA-PARTJPA-%ED%99%98%EA%B2%BD-%EA%B5%AC%EC%B6%95-%EB%B0%8F-%EC%8B%A4%EC%8A%B5) |   |
-| [JPA 동작 원리(영속성)](https://hsb422.tistory.com/entry/%E3%85%81-%EB%AC%B8%EB%B2%95-JPA-%EB%8F%99%EC%9E%91-%EC%9B%90%EB%A6%AC) |   |
-| [다양한 연관관계 매핑](https://hsb422.tistory.com/entry/%EB%AC%B8%EB%B2%95-Entity-%EB%A7%A4%ED%95%91-%EC%86%8C%EA%B0%9C) |   |
-| [연관관계 매핑 시 고려사항](https://hsb422.tistory.com/entry/%E3%85%81%EB%AC%B8%EB%B2%95-%EC%97%B0%EA%B4%80%EA%B4%80%EA%B3%84-%EB%A7%A4%ED%95%91-%EC%8B%9C-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD) |   |
-| [고급 매핑](https://hsb422.tistory.com/entry/%E3%85%81JPA-PART%EA%B3%A0%EA%B8%89-%EB%A7%A4%ED%95%91) |   |
-| [프록시 메커니즘과 부모 자식 life cycle](https://hsb422.tistory.com/entry/%E3%85%81%EB%AC%B8%EB%B2%95-%ED%94%84%EB%A1%9D%EC%8B%9C) |   |
-| [JPQL과 페치 조인 성능 최적화](https://hsb422.tistory.com/entry/%E3%85%81%EB%AC%B8%EB%B2%95-JPQL%EA%B3%BC-%ED%8E%98%EC%9D%B4-%EC%A1%B0%EC%9D%B8) | [commit](https://github.com/SangBeom-Hahn/cspop-backend/pull/21/commits/a6b1372c901528325dc3170430efc20dc4b7a322) |
-| [스프링 데이터 JPA 기능](https://hsb422.tistory.com/entry/%E3%85%81-%EB%AC%B8%EB%B2%95-%EC%8A%A4%ED%94%84%EB%A7%81-%EB%8D%B0%EC%9D%B4%ED%84%B0-JPA-%EA%B8%B0%EB%8A%A5) |   |
+| [스프링 트랜잭션 이해](https://hsb422.tistory.com/entry/%E3%85%81spring-PART%EC%8A%A4%ED%94%84%EB%A7%81-%ED%8A%B8%EB%9E%9C%EC%9E%AD%EC%85%98-%EC%9D%B4%ED%95%B4) |   |
+| [스프링 트랜잭션 전파 활용](https://hsb422.tistory.com/entry/%E3%85%81-%EB%AC%B8%EB%B2%95-%ED%8A%B8%EB%9E%9C) | [Commit](https://github.com/SangBeom-Hahn/cspop-backend/pull/21/commits/6de3b794e658faf3de034bb5e56085a67ec1737f) |
+
+14. JPA
+
+| 블로깅 | 구현 |   |
+|---|---|---|
+| [JPA 환경 구축](https://hsb422.tistory.com/entry/%E3%85%81JPA-PARTJPA-%ED%99%98%EA%B2%BD-%EA%B5%AC%EC%B6%95-%EB%B0%8F-%EC%8B%A4%EC%8A%B5) |   |   |
+| [JPA 동작 원리(영속성)](https://hsb422.tistory.com/entry/%E3%85%81-%EB%AC%B8%EB%B2%95-JPA-%EB%8F%99%EC%9E%91-%EC%9B%90%EB%A6%AC) |   |   |
+| [다양한 연관관계 매핑](https://hsb422.tistory.com/entry/%EB%AC%B8%EB%B2%95-Entity-%EB%A7%A4%ED%95%91-%EC%86%8C%EA%B0%9C) |   |   |
+| [연관관계 매핑 시 고려사항](https://hsb422.tistory.com/entry/%E3%85%81%EB%AC%B8%EB%B2%95-%EC%97%B0%EA%B4%80%EA%B4%80%EA%B3%84-%EB%A7%A4%ED%95%91-%EC%8B%9C-%EA%B3%A0%EB%A0%A4%EC%82%AC%ED%95%AD) |   |   |
+| [고급 매핑](https://hsb422.tistory.com/entry/%E3%85%81JPA-PART%EA%B3%A0%EA%B8%89-%EB%A7%A4%ED%95%91) |   |   |
+| [프록시 메커니즘과 부모 자식 life cycle](https://hsb422.tistory.com/entry/%E3%85%81%EB%AC%B8%EB%B2%95-%ED%94%84%EB%A1%9D%EC%8B%9C) |   |   |
+| [JPQL과 페치 조인 성능 최적화](https://hsb422.tistory.com/entry/%E3%85%81%EB%AC%B8%EB%B2%95-JPQL%EA%B3%BC-%ED%8E%98%EC%9D%B4-%EC%A1%B0%EC%9D%B8) | [Commit](https://github.com/SangBeom-Hahn/cspop-backend/pull/21/commits/a6b1372c901528325dc3170430efc20dc4b7a322) | [Pull Request](https://github.com/SangBeom-Hahn/cspop-backend/pull/24) |
+| [스프링 데이터 JPA 기능](https://hsb422.tistory.com/entry/%E3%85%81-%EB%AC%B8%EB%B2%95-%EC%8A%A4%ED%94%84%EB%A7%81-%EB%8D%B0%EC%9D%B4%ED%84%B0-JPA-%EA%B8%B0%EB%8A%A5) |   |   |
